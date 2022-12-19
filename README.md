@@ -15,6 +15,13 @@ The authors of this code are X. Song et al.
 Everything regarding clustering is take nfrom [Github link](https://github.com/GatorSense/hsi_toolkit).
 The code is written by A. Zare et al.
 
+## My contributions
+
+I have only modified certain aspects of the code. These are:
+- PCA -> KPCA/Clustering
+- SLIC -> Felzenszwalb/Qickshift/Watershed
+- No optimizer -> RMSP/Momentum/ADAM
+
 # Hyperspectral anomaly detection
 This is the implementation of articles: ["Hyperspectral Anomaly Detection With Robust Graph Autoencoders"](https://ieeexplore.ieee.org/document/9494034) and ["Robust Graph Autoencoder for Hyperspectral Anomaly Detection"](https://ieeexplore.ieee.org/document/9414767).
 # Usage
