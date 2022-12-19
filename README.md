@@ -33,7 +33,7 @@ Run "**main.m**" after setting optimal parameters lambda, S and n_hid.
       * **myPCA.m** ---------- PCA implementation;
     * **myRGAE.m** ---------- training of RGAE for hyperspectral anomaly detection;
   * **ROC.m**----------Calculate the AUC value with given detection map.
-# Reference
+# Reference for RGAE
 If you find the code helpful, please kindly cite the following papers:
 * Plain Text:<br>
   * G. Fan, Y. Ma, X. Mei, F. Fan, J. Huang and J. Ma, "Hyperspectral Anomaly Detection With Robust Graph Autoencoders," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2021.3097097.<br>
