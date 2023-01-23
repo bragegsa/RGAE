@@ -34,9 +34,9 @@ model_name = 'default';
 % model_name = 'KPCA4';
 % model_name = 'Clustering3';
 % Loading the dataset
-% dataset_name = 'abu-airport-4';
+dataset_name = 'abu-airport-1';
 % dataset_name = 'abu-beach-3';
-dataset_name = 'abu-urban-5';
+% dataset_name = 'abu-urban-5';
 file_path = 'datasets/';
 load(join([file_path, dataset_name]));
 
@@ -46,8 +46,8 @@ mask = map;
 data = (data-min(data(:)))./(max(data(:))-min(data(:)));
 
 % Parameters to optimize: (default values)
-lambda = 1e-3;
-S=100;
+lambda = 1e-2;
+S=300;
 n_hid=100;
 
 lr = 0.01;

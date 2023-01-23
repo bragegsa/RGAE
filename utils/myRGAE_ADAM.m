@@ -1,4 +1,4 @@
-function y=myRGAE_momentum(X,SG,lamda,hid, map, epochs, lr, idex)%
+function y=myRGAE_ADAM(X,SG,lamda,hid, map, epochs, lr, idex)%
 % Training of RGAE for hyperspectral anomaly detection
 % INPUTS:
 %   - X:     HSI data set (rows*columns by bands);
@@ -91,7 +91,7 @@ function y=myRGAE_momentum(X,SG,lamda,hid, map, epochs, lr, idex)%
         
     end
     
-    plot_AUC = true;
+    plot_AUC = false;
     if plot_AUC == true
         L = length(All_AUC);
         empty = 1:L;

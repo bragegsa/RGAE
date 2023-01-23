@@ -13,7 +13,7 @@ function y = RGAE(data,lambda,S,n_hid, map, epochs, lr, dataset_name)
     
     tic;
     % Training RGAE
-    y_tmp=myRGAE(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
+%     y_tmp=myRGAE(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
 
     % RGAE with momentum
 %     y_tmp=myRGAE_momentum(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
@@ -22,7 +22,7 @@ function y = RGAE(data,lambda,S,n_hid, map, epochs, lr, dataset_name)
 %     y_tmp=myRGAE_RMSP(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
 
     % RGAE with ADAM
-%     y_tmp=myRGAE_ADAM(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
+    y_tmp=myRGAE_ADAM(X_new,SG,lambda,n_hid, map, epochs, lr, idex);
 
     toc;
     
@@ -31,4 +31,5 @@ function y = RGAE(data,lambda,S,n_hid, map, epochs, lr, dataset_name)
     
     zips_sort=sortrows(zips,1);
     y=zips_sort(:,2);
+    disp('stop');
 end

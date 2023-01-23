@@ -13,7 +13,8 @@ function [SG,X_new,idex]=SuperGraph(data,S, mask, dataset_name)
     X=reshape(data,M*N,L);
     addpath(genpath('utils'))
     
-    dim_reduction = 'pca'; 
+    % Data already sectioned using K
+    Y = data(:,:,1);
     
     if dim_reduction == 'pca'
         disp('Dimentionality reduction using PCA.');
